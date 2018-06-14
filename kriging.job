@@ -1,0 +1,21 @@
+#### BATCH_SYSTEM=PBS ####
+
+
+#PBS -N KrigXYZ
+#PBS -S /bin/bash
+#PBS -q lc_big
+#PBS -r n
+#PBS -o /lustre1/rwork2/routwzn/smukeshk/INTERPOLATION/KRIGING/VERSION1.1/HME/XYZ/kriging.out
+#PBS -j oe
+#PBS -l walltime=24:00:00
+#PBS -l mem=16gb
+#PBS -l ncpus=1
+#PBS -W umask=0027 
+#PBS -M stefan.contractor@gmail.com
+#PBS -m ae
+#PBS -V
+
+#######################################################
+cd /lustre1/rwork2/routwzn/smukeshk/INTERPOLATION/KRIGING/VERSION1.1/HME/XYZ
+./Datensatz-erzeugen.sh
+

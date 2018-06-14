@@ -39,6 +39,8 @@ The directories contain fortran scripts for the subroutines called by kriging.f9
 
 The actual interpolation script which is compiled by the controller scripts above. In here, the variagrams are calculated and the raw data is interpolated. I have not paid much attention to what goes on in here. I trusted it all works fine. 
 
+## Input file for interpolation
 
+The directory IN/ contains a sample input file containing the raw in situ data for interpolation. The input files are organised by day and contains four columns Latitude, Longitude, in situ value and monthly value (used for calculating anomalies). For subdaily interpolation, the files will be organised by hour and the monthly values column should be filled with 1.0 for absolute value interpolation. 
 
 

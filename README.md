@@ -31,7 +31,7 @@ The large commented out section at the bottom just creates plots of the interpol
 
 LAM_1.0_D_R is the longitude grid information (I think), PHI_1.0_D_R contains the latitude information and SEA_1.0_D_R contains the land sea mask information. 
 
-## Subroutinen Subroutinen_FGD
+## Subroutinen and Subroutinen_FGD directories
 
 The directories contain fortran scripts for the subroutines called by kriging.f90. Both directories contain identical files. It is possible that the scripts work fine with only one directory (most likely the Subroutinen_FGD because I have only ever seen these being called), but I have never tried this.
 
